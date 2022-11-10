@@ -12,17 +12,25 @@ int main()
  fflush(stdin);
  puts("Otipkaj ime datoteke:");
  gets(filename);
+
  if ( (fp = fopen(filename, "w")) == NULL)
  {
+
  fprintf(stderr, "Greska pri otvaranju datoteke %s.", filename);
  exit(1);
+
  }
+
  for (i = 0; i < 5; i++)
  {
+
  fprintf(fp, "\ndata[%d] = %f", i, data[i]);
  fprintf(stdout, "\ndata[%d] = %f", i, data[i]);
+
  }
+
  fclose(fp);
  printf("\nSada procitaj datoteku: %s", filename);
  return(0);
+
 } 

@@ -10,8 +10,8 @@ int main()
  for (i = 0; i < 5; i++)
  scanf("%f", &data[i]);
  fflush(stdin);
- puts("Otipkaj ime datoteka:");
- gets(filename);
+ printf("Otipkaj ime datoteke:");
+ scanf("%s", &filename);
  if ( (fp = fopen(filename, "w")) == NULL)
  {
  fprintf(stderr, "Greska pri otvaranju datoteke %s.", filename);

@@ -68,7 +68,7 @@ student* AlocirajMemorijuProcitajStudente(int brojStudenata, char* imedatoteke) 
 	popis = (student*)malloc(brojStudenata * sizeof(student));
 	datoteka = fopen(imedatoteke, "r");
 
-	if ("!datoteka") {
+	if (!datoteka) {
 		printf("Greska!\n");
 		free(popis);
 		return NULL;

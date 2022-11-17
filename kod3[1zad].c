@@ -72,7 +72,7 @@ student* AlocirajMemorijuProcitajStudente(int brojStudenata, char* imedatoteke) 
 		printf("Greska!\n");
 		free(popis);
 		return NULL;
-//ili fclose(imedatoteke);
+							//ili fclose(imedatoteke);
 	}
 
 	while (!feof(datoteka)) 

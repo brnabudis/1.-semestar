@@ -52,6 +52,8 @@ int broji_retke(char* imedatoteke) {
 	while (!feof(datoteka)) {
 		fgets(buffer, MAX_LINE, datoteka);
 		brojac++;
+	if strlen(buffer) != 0;
+		brojac++;
 	}
 
 	fclose(datoteka);

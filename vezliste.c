@@ -10,7 +10,7 @@ typedef struct {
 } osoba;
 
 
-void dodaj_osobu_na_pocetak(osoba** lista, osoba* nova_osoba);
+void dodaj_osobu_na_pocetak(osoba* lista, osoba* nova_osoba);
 void ispisi_listu_osoba(osoba* lista);
 void dodaj_osobu_na_kraj(osoba* lista, osoba* nova_osoba);
 osoba* pronadi_po_prezimenu(osoba* lista, char* prezime);

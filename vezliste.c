@@ -6,7 +6,7 @@
 typedef struct {
     char ime[32];
     char prezime[32];
-    int dat_rod;
+    int god_rod;
 } osoba;
 
 
